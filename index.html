@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Projeto Salva Nascentes - Conscientização sobre poluição de rios e nascentes para o Concurso Agrinho 2026">
+    <title>Salva Nascentes - Água que Viva | Agrinho 2026</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- ===== BOTÃO DE ACESSIBILIDADE FIXO ===== -->
+    <div class="botao-acessibilidade" id="botaoAcessibilidade">
+        <button id="btnAcessibilidade" aria-label="Abrir menu de acessibilidade" title="Opções de acessibilidade">
+            ♿ Acessibilidade
+        </button>
+        <div class="menu-acessibilidade" id="menuAcessibilidade">
+            <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">🔍 A+ Aumentar fonte</button>
+            <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">🔍 A- Diminuir fonte</button>
+            <button id="altoContraste" aria-label="Ativar ou desativar alto contraste">🎨 Alto contraste</button>
+        </div>
+    </div>
+
+    <!-- ===== CABEÇALHO ===== -->
+    <header>
+        <div class="container">
+            <h1>💧 Salva Nascentes</h1>
+            <p class="subtitulo">Água que Viva - Proteja nossos rios e nascentes</p>
+            
+            <!-- Menu de navegação simplificado -->
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#ajudar">Como Ajudar</a></li>
+                    <li><a href="#conclusao">Conclusão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+        
+        <!-- SEÇÃO 1: INÍCIO -->
+        <section id="inicio" class="secao">
+            <div class="container">
+                <h2>🌱 Bem-vindo ao Salva Nascentes</h2>
+                <article>
+                    <p>Nosso planeta precisa de água limpa para viver. Mas você sabia que <strong>rios e nascentes</strong> estão sendo poluídos todos os dias? O projeto <strong>Salva Nascentes</strong> foi criado para conscientizar sobre a importância da água doce e ensinar como podemos proteger nossas fontes de vida.</p>
+                    <p>🌾 <strong>Tema Agrinho 2026:</strong> "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</p>
+                    <p>💡 <strong>Nosso objetivo:</strong> Ensinar o verdadeiro valor da água e como descartar o lixo de forma correta para preservar rios e nascentes.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: PROBLEMA -->
+        <section id="problema" class="secao">
+            <div class="container">
+                <h2>⚠️ O problema: Poluição de rios e nascentes</h2>
+                <article>
+                    <p>Milhares de rios e nascentes no Brasil estão poluídos. As principais causas são:</p>
+                    <ul>
+                        <li>🗑️ <strong>Lixo jogado incorretamente</strong> - Plásticos, vidros, metais e produtos químicos vão parar na água</li>
+                        <li>🧪 <strong>Agrotóxicos</strong> - Uso excessivo na agricultura contamina a água</li>
+                        <li>🏭 <strong>Esgoto sem tratamento</strong> - Atinge rios e nascentes nas cidades e no campo</li>
+                        <li>💊 <strong>Descarte irregular</strong> - Remédios e produtos químicos jogados no lixo comum ou diretamente nos rios</li>
+                    </ul>
+                    <p><strong>Por que esse problema é importante para a sociedade?</strong></p>
+                    <p>Precisamos de água potável para as futuras gerações. Rios poluídos significam menos água para beber, para plantar e para a vida dos animais. A agricultura também sofre, pois plantações irrigadas com água poluída produzem alimentos contaminados.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: SOLUÇÕES SUSTENTÁVEIS -->
+        <section id="solucoes" class="secao">
+            <div class="container">
+                <h2>🌿 Soluções sustentáveis</h2>
+                <article>
+                    <p>Existem várias formas de proteger nossos rios e nascentes. Veja soluções práticas:</p>
+                    <ul>
+                        <li>✅ <strong>Descarte correto do lixo</strong> - Separar recicláveis e nunca jogar lixo nos rios, lagos ou nascentes</li>
+                        <li>✅ <strong>Agroecologia</strong> - Usar menos agrotóxicos e mais defensivos naturais nas plantações</li>
+                        <li>✅ <strong>Mata ciliar</strong> - Plantar árvores nas margens dos rios para proteger a água e evitar erosão</li>
+                        <li>✅ <strong>Tratamento de esgoto</strong> - Cobrar das prefeituras o saneamento básico adequado</li>
+                        <li>✅ <strong>Educação ambiental</strong> - Ensinar crianças, jovens e adultos a valorizar e preservar a água</li>
+                        <li>✅ <strong>Coleta seletiva</strong> - Reciclar plásticos, vidros e metais para evitar que cheguem aos rios</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: QUIZ INTERATIVO (FUNCIONALIDADE PRINCIPAL) -->
+        <section id="quiz" class="secao">
+            <div class="container">
+                <h2>📋 Simulador de qualidade da água</h2>
+                <p>Responda às perguntas abaixo e descubra como está a qualidade da água na sua região. Você receberá dicas personalizadas para ajudar a preservar rios e nascentes!</p>
+                
+                <div class="quiz-container">
+                    <form id="formQuiz" aria-label="Quiz sobre qualidade da água">
+                        
+                        <!-- Pergunta 1 -->
+                        <div class="pergunta">
+                            <p><strong>1. Onde você costuma descartar o lixo?</strong></p>
+                            <label><input type="radio" name="pergunta1" value="0"> ❌ Na rua ou no rio</label><br>
+                            <label><input type="radio" name="pergunta1" value="2"> 🗑️ Na lixeira comum</label><br>
+                            <label><input type="radio" name="pergunta1" value="4"> ♻️ Separo o lixo reciclável e orgânico</label>
+                        </div>
+
+                        <!-- Pergunta 2 -->
+                        <div class="pergunta">
+                            <p><strong>2. Na sua cidade, o esgoto é tratado antes de ir para os rios?</strong></p>
+                            <label><input type="radio" name="pergunta2" value="0"> ❌ Não sei / Não é tratado</label><br>
+                            <label><input type="radio" name="pergunta2" value="2"> ⚠️ É tratado em algumas áreas</label><br>
+                            <label><input type="radio" name="pergunta2" value="4"> ✅ Sim, a cidade trata todo o esgoto</label>
+                        </div>
+
+                        <!-- Pergunta 3 -->
+                        <div class="pergunta">
+                            <p><strong>3. Você economiza água no seu dia a dia?</strong></p>
+                            <label><input type="radio" name="pergunta3" value="0"> ❌ Não, desperdiço sem perceber</label><br>
+                            <label><input type="radio" name="pergunta3" value="2"> ⚠️ Às vezes fecho a torneira</label><br>
+                            <label><input type="radio" name="pergunta3" value="4"> ✅ Sempre fecho a torneira e reúso a água</label>
+                        </div>
+
+                        <!-- Pergunta 4 -->
+                        <div class="pergunta">
+                            <p><strong>4. Agricultores próximos a você usam agrotóxicos?</strong></p>
+                            <label><input type="radio" name="pergunta4" value="0"> ❌ Sim, e o produto vai para os rios</label><br>
+                            <label><input type="radio" name="pergunta4" value="2"> ⚠️ Usam, mas com controle</label><br>
+                            <label><input type="radio" name="pergunta4" value="4"> ✅ Usam apenas defensivos naturais (agroecologia)</label>
+                        </div>
+
+                        <button type="button" id="btnVerificar">🔍 Verificar qualidade da água</button>
+                    </form>
+
+                    <div id="resultadoQuiz" class="resultado" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: COMO AJUDAR -->
+        <section id="ajudar" class="secao">
+            <div class="container">
+                <h2>🤝 Como você pode ajudar?</h2>
+                <article>
+                    <p>Pequenas atitudes fazem uma grande diferença na preservação dos rios e nascentes:</p>
+                    <ul>
+                        <li>💧 <strong>Nunca jogue lixo em rios, lagos ou nascentes</strong> - Sempre use lixeiras adequadas</li>
+                        <li>💧 <strong>Participe de mutirões de limpeza</strong> - Organize ou participe de ações na sua comunidade</li>
+                        <li>💧 <strong>Ensine outras pessoas</strong> - Compartilhe o que aprendeu com crianças, vizinhos e familiares</li>
+                        <li>💧 <strong>Economize água em casa</strong> - Feche torneiras, tome banhos rápidos e reutilize a água sempre que possível</li>
+                        <li>💧 <strong>Apoie agricultores sustentáveis</strong> - Prefira produtos de agricultores que usam práticas ecológicas</li>
+                        <li>💧 <strong>Cobre das autoridades</strong> - Exija saneamento básico e fiscalização contra poluição</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: CONCLUSÃO -->
+        <section id="conclusao" class="secao">
+            <div class="container">
+                <h2>🌎 Conclusão</h2>
+                <article>
+                    <p>O equilíbrio entre produção agrícola e meio ambiente é possível! Quando protegemos rios e nascentes, garantimos água limpa para plantar, para os animais, para as pessoas e para as futuras gerações.</p>
+                    <p><strong>Lembre-se:</strong> a água é vida. Cuidar dela é cuidar de todos nós. Com pequenas atitudes no dia a dia, podemos transformar a realidade dos nossos rios e garantir um futuro sustentável.</p>
+                    <p>🌿 <strong>Agro forte, futuro sustentável</strong> - essa é a mensagem que o Salva Nascentes quer espalhar. Junte-se a nós nessa missão!</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 - Projeto Salva Nascentes | Concurso Agrinho 2026</p>
+            <p>Estudante: Vitória Emanuelle Beraldo da Silva | Programação Front-End</p>
+            <p>🌿 "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
